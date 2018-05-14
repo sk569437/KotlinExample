@@ -8,6 +8,7 @@ import com.afmobi.sk.demokotlin.kotlin.common.LogUtils
 import com.afmobi.sk.demokotlin.kotlin.container_operator.Containers
 import com.afmobi.sk.demokotlin.kotlin.delegate_proxy.Preference
 import com.afmobi.sk.demokotlin.kotlin.method_extension.Animal
+import com.afmobi.sk.demokotlin.kotlin.method_extension.newIntent
 import com.afmobi.sk.demokotlin.kotlin.nonsafeoperator.nullSafeOperator
 import com.afmobi.sk.demokotlin.test_method.Hello
 import org.jetbrains.anko.custom.async
@@ -101,6 +102,7 @@ class MainActivity : AppCompatActivity() {
                 val view = findViewById<View>(R.id.id_tv_text)
                 if (view is TextView) {
                     view.setText("abc")
+                    view.setOnClickListener { newIntent<PersonActivity>() }
                 }
             }
         }

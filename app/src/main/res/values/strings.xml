@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DemoKotlin</string>
+
+    <string name="txt_filter_1">年纪大于30的人</string>
+
+    <string name="txt_filter_2">年纪小于30且为女性的人</string>
+
 </resources>
