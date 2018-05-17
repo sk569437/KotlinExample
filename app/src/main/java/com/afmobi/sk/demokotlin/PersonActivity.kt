@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import com.afmobi.sk.demokotlin.kotlin.data_class.PersonBean
 import com.afmobi.sk.demokotlin.kotlin.model.PersonAdapter
+import com.afmobi.sk.demokotlin.kotlin.sigle_instance.LogUtils
 import kotlinx.android.synthetic.main.activity_person.*
 import org.jetbrains.anko.toast
 
@@ -53,7 +54,7 @@ class PersonActivity : Activity() {
             println(it.length)
             1000
         }
-        Log.e("DemoKotlin", result)
+        LogUtils.d(result)
 
     }
 

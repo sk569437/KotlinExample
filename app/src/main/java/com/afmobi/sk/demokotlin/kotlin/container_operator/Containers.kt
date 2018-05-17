@@ -1,7 +1,7 @@
 package com.afmobi.sk.demokotlin.kotlin.container_operator
 
-import com.afmobi.sk.demokotlin.kotlin.common.LogUtils
 import com.afmobi.sk.demokotlin.kotlin.data_class.PersonBean
+import com.afmobi.sk.demokotlin.kotlin.sigle_instance.LogUtils
 
 /**
  * Created by sk on 18-3-5.

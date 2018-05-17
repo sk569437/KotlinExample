@@ -1,6 +1,6 @@
 package com.afmobi.sk.demokotlin.test_method
 
-import com.afmobi.sk.demokotlin.kotlin.common.LogUtils
+import com.afmobi.sk.demokotlin.kotlin.sigle_instance.LogUtils
 
 /**
  * Created by sk on 18-3-2.

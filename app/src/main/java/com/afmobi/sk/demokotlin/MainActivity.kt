@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
-import com.afmobi.sk.demokotlin.kotlin.common.LogUtils
+import com.afmobi.sk.demokotlin.kotlin.common.Child
+import com.afmobi.sk.demokotlin.kotlin.common.KotlinBase
 import com.afmobi.sk.demokotlin.kotlin.container_operator.Containers
 import com.afmobi.sk.demokotlin.kotlin.delegate_proxy.Preference
 import com.afmobi.sk.demokotlin.kotlin.method_extension.Animal
 import com.afmobi.sk.demokotlin.kotlin.method_extension.newIntent
 import com.afmobi.sk.demokotlin.kotlin.nonsafeoperator.nullSafeOperator
+import com.afmobi.sk.demokotlin.kotlin.sigle_instance.LogUtils
 import com.afmobi.sk.demokotlin.test_method.Hello
 import org.jetbrains.anko.custom.async
 
@@ -30,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         testAnimal()
 
         testContainerOperator()
+
+        KotlinBase().testBaseType()
+
+        Child("aaa")
     }
 
     fun testMethod() {
@@ -82,6 +88,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun testContainerOperator() {
+        LogUtils.d("test container operator")
         var container: Containers = Containers()
 
         container.toString()
