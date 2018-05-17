@@ -5,13 +5,11 @@ import android.util.Log
 /**
  * Created by sk on 18-3-7.
  */
-object TimerLog {
+object LogUtil {
 
 
-
-
-    fun Log.d(s: String) {
-        Log.d(TimerLog.javaClass.simpleName, s)
+    fun d(s: String) {
+        Log.d(LogUtil.javaClass.simpleName, s)
     }
 
 
